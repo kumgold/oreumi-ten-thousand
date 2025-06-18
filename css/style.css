@@ -1,22 +1,37 @@
 @font-face {
     font-family: "OTEnjoystoriesBA";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
         format("woff");
     font-weight: normal;
-}
-
-@font-face {
-    font-family: "GmarketSans";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-        format("woff");
-    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "GmarketSansBold";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
         format("woff");
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+            format("woff2"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+            format("woff"),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+            format("opentype");
 }
 
 :root {
@@ -67,7 +82,7 @@ body {
     font-weight: 400;
     color: var(--text-color);
     text-align: center;
-    font-family: GmarketSans;
+    font-family: GmarketSansMedium;
     text-align: center;
     vertical-align: middle;
 }
@@ -110,7 +125,7 @@ body {
 }
 
 .main-text {
-    font-family: GmarketSans;
+    font-family: GmarketSansMedium;
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 100%;
@@ -119,7 +134,7 @@ body {
 }
 
 .hint-text {
-    font-family: GmarketSans;
+    font-family: GmarketSansMedium;
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 100%;
@@ -226,6 +241,7 @@ body {
 }
 
 .footer-text {
+    font-family: Noto Sans KR;
     font-size: 1.2rem;
     color: var(--text-color);
     text-align: center;
