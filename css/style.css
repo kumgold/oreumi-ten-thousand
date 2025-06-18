@@ -31,7 +31,7 @@ html {
 
 body {
     background-color: var(--purple);
-    position: relative;
+    margin: auto;
 }
 
 .header {
@@ -43,6 +43,7 @@ body {
 
 .title-img {
     aspect-ratio: 564 / 265;
+    object-fit: cover;
     width: 56.4rem;
 }
 
@@ -93,14 +94,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.divider-vertical {
-    height: 2rem;
-}
-
-.divider-horizontal {
-    width: 1.2rem;
+.main-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container {
@@ -113,7 +113,17 @@ body {
     font-family: GmarketSans;
     font-size: 2.4rem;
     letter-spacing: 0;
+    line-height: 100%;
     color: var(--text-color);
+    text-align: center;
+}
+
+.hint-text {
+    font-family: GmarketSans;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: 100%;
+    color: #babcbe;
     text-align: center;
 }
 
@@ -131,6 +141,7 @@ body {
     font-size: 2.4rem;
     font-weight: 500;
     letter-spacing: 0;
+    line-height: 100%;
     color: var(--purple);
     background-color: var(--main-color);
     padding: 2rem 5rem;
@@ -143,6 +154,7 @@ body {
     font-size: 2.4rem;
     font-weight: 500;
     letter-spacing: 0;
+    line-height: 100%;
     color: var(--purple);
     text-align: center;
     background-color: white;
@@ -151,10 +163,17 @@ body {
     border-radius: 1.2rem;
 }
 
+.flex-button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
 .submit-container {
     margin-top: 12rem;
     display: flex;
     justify-content: center;
+    gap: 1.2rem;
 }
 
 .relative {
@@ -164,7 +183,7 @@ body {
 .pointer {
     position: absolute;
     top: 1.4rem;
-    right: 3.4rem;
+    right: -7.1rem;
     width: 6.4rem;
     height: 7.2rem;
 }
@@ -175,12 +194,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
 }
 
 .result-text {
     font-size: 7.2rem;
     font-weight: 700;
     margin: 0 1.2rem;
+}
+
+.button-container {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
 }
 
 .footer-container {
@@ -190,24 +222,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .footer-text {
     font-size: 1.2rem;
     color: var(--text-color);
     text-align: center;
+    line-height: 120%;
 }
 
 .modal {
-    display: flex;
     width: 80rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8rem 14.6rem;
     background-color: white;
     border-radius: 2rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem;
+    box-shadow: 0.4rem 0.4rem 3rem 0px #00000026;
 }
 
 .modal-title {
@@ -217,6 +251,10 @@ body {
     line-height: 100%;
     letter-spacing: 0;
     color: var(--purple);
+}
+
+.modal-title::after {
+    content: "♥♥♥";
 }
 
 .modal-description {
@@ -231,4 +269,130 @@ body {
 
 .modal-img {
     margin-bottom: 6rem;
+}
+
+.shadow-default {
+    box-shadow: 0.2rem 0.4rem 1rem 0 #00000026;
+}
+
+@media (max-width: 767px) {
+    .header {
+        margin-top: 4rem;
+    }
+
+    .title-img {
+        aspect-ratio: 564 / 265;
+        object-fit: cover;
+        width: calc(100% - 8.2rem);
+        margin: 0 auto;
+    }
+
+    .sub-title {
+        margin-top: 3.2rem;
+        font-size: 2.2rem;
+    }
+
+    .quotation {
+        margin-top: 3.2rem;
+    }
+
+    .quote {
+        width: 2rem;
+        height: 1.8rem;
+        align-self: center;
+    }
+
+    .description {
+        font-size: 1.4rem;
+    }
+
+    .description > strong {
+        font-family: GmarketSansBold;
+        font-size: 1.4rem;
+    }
+
+    .main-text {
+        font-size: 1.4rem;
+    }
+
+    .main-button {
+        font-size: 1.4rem;
+        padding: 1.6rem 2.4rem;
+    }
+
+    .flex-button {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .sub-button {
+        font-size: 1.4rem;
+    }
+
+    .main-container {
+        margin-top: 6rem;
+        gap: 1.2rem;
+    }
+
+    .main-item {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .input-text {
+        padding: 1.2rem 4rem;
+        margin: 0 0.8rem;
+        color: black;
+    }
+
+    .pointer {
+        width: 4.3rem;
+        height: 4.8rem;
+        right: -4.7rem;
+        top: 4rem;
+    }
+
+    .submit-container {
+        margin-top: 8rem;
+    }
+
+    .result-container {
+        margin-top: 6.8rem;
+    }
+
+    .result-text {
+        font-size: 2.4rem;
+    }
+
+    .button-container {
+        margin-top: 5.2rem;
+    }
+
+    .footer-container {
+        margin-top: 6rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .modal {
+        width: 33rem;
+        height: 50rem;
+        padding: 4rem 4.2rem;
+    }
+
+    .modal-title {
+        font-size: 6.4rem;
+    }
+
+    .modal-title::after {
+        content: "";
+    }
+
+    .modal-img {
+        aspect-ratio: 438 / 342;
+        object-fit: cover;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2.4rem;
+    }
 }
