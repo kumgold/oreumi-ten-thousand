@@ -35,12 +35,15 @@
     </head>
     <body>
         <header class="header">
-            <h1 class="sr-only">1만 시간의 법칙</h1>
-            <img
-                class="title-img"
-                src="./img/title.svg"
-                alt="1만 시간의 법칙 타이틀 이미지"
-            />
+            <h1>
+                <img
+                    class="title-img"
+                    src="./img/title.svg"
+                    alt="1만 시간의 법칙 타이틀 이미지"
+                />
+            </h1>
+        </header>
+        <main class="main-container">
             <p class="sub-title">
                 “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
             </p>
@@ -53,10 +56,9 @@
                 </p>
                 <img class="quote" src="./img/right-double-quote.png" alt="" />
             </div>
-        </header>
-        <main class="main-container">
-            <div class="input-container">
-                <div class="input-item">
+            <section class="input-container">
+                <h2 class="sr-only">전문가가 되기 위한 시간 입력</h2>
+                <form class="input-item">
                     <span class="main-text">나는</span>
                     <label class="sr-only" for="export">
                         전문가가 되고 싶은 분야 입력
@@ -68,10 +70,10 @@
                         id="export"
                     />
                     <span class="main-text">전문가가 될 것이다.</span>
-                </div>
+                </form>
                 <div class="main-item">
                     <span class="main-text">그래서 앞으로 매일 하루에</span>
-                    <div class="input-item">
+                    <form class="input-item">
                         <label class="sr-only" for="time">
                             전문가가 되기 위해 하루 중 투자할 시간 입력
                         </label>
@@ -82,44 +84,45 @@
                             id="time"
                         />
                         <span class="main-text">시간씩 훈련할 것이다.</span>
-                    </div>
+                    </form>
                 </div>
-            </div>
-            <div class="submit-container relative">
-                <button class="main-button flex-button">
-                    <span>나는 며칠 동안 훈련을 해야</span>
-                    <span>1만 시간이 될까?</span>
-                    <span class="sr-only">계산 버튼</span>
-                </button>
-                <img class="pointer" src="./img/pointer.svg" alt="" />
-            </div>
-            <div class="result-container">
+                <div class="submit-container relative">
+                    <button class="main-button flex-button" type="button">
+                        <span>나는 며칠 동안 훈련을 해야</span>
+                        <span>1만 시간이 될까?</span>
+                        <span class="sr-only">계산 버튼</span>
+                    </button>
+                    <img class="pointer" src="./img/pointer.svg" alt="" />
+                </div>
+            </section>
+            <section class="result-container">
+                <h2 class="sr-only">시간 계산 결과</h2>
                 <div class="result-item">
                     <span class="main-text">당신은</span>
                     <span class="sr-only">입력한 전문가</span>
-                    <span class="main-text result-text">프로그래밍</span>
+                    <strong class="main-text result-text">프로그래밍</strong>
                     <span class="main-text">전문가가 되기 위해서</span>
                 </div>
                 <div class="result-item">
                     <span class="main-text">대략</span>
                     <span class="sr-only">계산된 시간은</span>
-                    <span class="main-text result-text">5110</span>
+                    <strong class="main-text result-text">5110</strong>
                     <span class="main-text">일 이상 훈련하셔야 합니다! :)</span>
                 </div>
-            </div>
-            <div class="button-container">
-                <button class="main-button">
-                    훈련하러 가기 GO! GO!
-                    <span class="sr-only">훈련 버튼</span>
-                </button>
-                <button class="sub-button">
-                    공유하기
-                    <span class="sr-only">공유 버튼</span>
-                </button>
-            </div>
+                <div class="button-container">
+                    <button class="main-button" type="button">
+                        훈련하러 가기 GO! GO!
+                        <span class="sr-only">훈련 버튼</span>
+                    </button>
+                    <button class="sub-button" type="button">
+                        공유하기
+                        <span class="sr-only">공유 버튼</span>
+                    </button>
+                </div>
+            </section>
         </main>
         <footer class="footer-container">
-            <img src="./img/logo.png" alt="weniv logo" />
+            <img src="./img/logo.png" alt="weniv" />
             <p class="footer-text">
                 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에
                 있습니다.<br />
